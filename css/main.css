@@ -2,29 +2,28 @@
     box-sizing:border-box;
 }
 body{
-    margin: 20px 40px 20px 20px;
+    margin: 0;
 }
 .container{
-    margin: 20px 0 0 20px;
-    
+    margin: 20px 10px 10px 20px;
     max-width: 700px;
 }
 .avatar{
     border-radius: 50%;
     max-width: 75px;
     max-height: 75px;
-    padding-right: 20px;
+    margin-right: 30px;
 }
 .profile{
     display:flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .title_attach-file{
     display:flex;
     justify-content: flex-start;
-    align-items: center;    
+    align-items: center;  
+    margin-top: 10px;
 }
 .title_attach-file a{
     text-decoration: none;
@@ -40,10 +39,12 @@ body{
     font-size: 20px;
 }
 .title_text{
+    width: 550px;
     background-color: #0077ff;
     padding: 10px 20px 10px 5px;
     color: #fff;
     font-size: 20px;
+    text-align: justify;
 }
 .title_phone{
     font-size: 18px;
@@ -54,9 +55,12 @@ body{
     margin-right: 20px;
 }
 .form{
-    margin-top: 30px;
+    width: 600px;
+   margin: 0;
 }
 .info{
+    margin-top: 30px;
+    width: 700px;
     display:flex;
     justify-content: flex-start;
     margin-bottom: 30px;
@@ -69,50 +73,270 @@ body{
 }
 #phone{
     display: block;
-    width: 450px;
+    width: 400px;
+    margin-right: 40px;
 }
 .info_text{
     display: block;
-    width: 700px;
+    width: 660px;
     min-height: 100px;
 
 }
-@media (max-width: 992px) {
-    .title_text{
-        text-align: justify;
-        transform: none;
-        margin-top: 20px;
-        font-size: 16px;
-    }
-    .title_phone{
-        font-size: 14px;
-    }
+@media (max-width: 992px){
+
 }
 @media (max-width: 768px) {
-        .container {
-            max-width: 500px;
-        }
-    .info{
-        display: block;
+    .title_name {
+        background-color: #0077ff;
+        padding: 0px 20px 0px 5px;
+        color: #fff;
+        font-size: 16px;
     }
-    #name{
-    width: 500px;
-    margin-bottom: 25px;
+
+    .title_phone {
+        font-size: 12px;
     }
-    #phone{
+    .container {
+        margin: 20px 10px 10px 20px;
         width: 500px;
-        margin-bottom: 25px;
     }
-    .info_text{
-        width: 500px;
+    .title_text {
+        width: 300px;
+        font-size: 18px;
+        background-color: #0077ff;
+        padding: 10px 20px 10px 5px;
+        color: #fff;
+        font-size: 14px;
+
+    }
+    .title_attach-file {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .title_attach-file a {
+        text-decoration: none;
+        background-color: #0e7eff94;
+        padding: 1px 0px 1px 3px;
+        color: #fff;
+        width: 150px;
+        font-size: 12px;
     }
     .img_attach-file {
         max-width: 20px;
         max-height: 20px;
         margin-right: 20px;
     }
-    .title_attach-file a {
+    .form {
+        width: 500px;
+        margin: 0;
+    }
+
+    .info {
+        margin: 20px 20px 20px 20px;
+        width: 500px;
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    #name {
+        display: block;
+        width: 150px;
+    }
+
+    #phone {
+        display: block;
+        width: 215px;
+    }
+
+    .info_text {
+        margin-left: 20px;
+        display: block;
+        width: 385px;
+        min-height: 100px;
+
+    }
+}
+@media (max-width: 576px) {
+    .avatar {
+        border-radius: 50%;
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 20px;
+    }
+
+    .title_name {
+        background-color: #0077ff;
+        padding: 0px 20px 0px 5px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .title_phone {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 10px 10px 10px 20px;
+        width: 280px;
+    }
+
+    .title_text {
         width: 200px;
-        font-size: 14px;
+        background-color: #0077ff;
+        padding: 10px 20px 10px 5px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .title_attach-file {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .title_attach-file a {
+        text-decoration: none;
+        background-color: #0e7eff94;
+        padding: 1px 0px 1px 3px;
+        color: #fff;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .img_attach-file {
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 10px;
+    }
+
+    .form {
+        width: 280px;
+        margin: 0;
+    }
+
+    .info {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #name {
+
+        width: 250px;
+        height: 15px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    #phone {
+        display: block;
+        width: 250px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .info_text {
+        margin-top: 10px;
+        display: block;
+        width: 250px;
+        min-height: 50px;
+        font-size: 10px;
+    }
+
+    .button_1 {
+        margin-left: 20px;
+        font-size: 8px;
+    }
+
+    .button_2 {
+        margin-left: 20px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 320px) {
+    .avatar {
+        border-radius: 50%;
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 20px;
+    }
+    .title_name {
+        background-color: #0077ff;
+        padding: 0px 20px 0px 5px;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .title_phone {
+        font-size: 10px;
+    }
+    .container {
+        margin: 20px 10px 10px 20px;
+        width: 280px;
+    }
+    .title_text {
+        width: 200px;
+        background-color: #0077ff;
+        padding: 10px 20px 10px 5px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .title_attach-file {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .title_attach-file a {
+        text-decoration: none;
+        background-color: #0e7eff94;
+        padding: 1px 0px 1px 3px;
+        color: #fff;
+        width: 100px;
+        font-size: 12px;
+    }
+    .img_attach-file {
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 10px;
+    }
+    .form {
+        width: 280px;
+        margin: 0;
+    }
+    .info {
+
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #name {
+
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    #phone {
+        display: block;
+        width: 250px;
+    }
+
+    .info_text {
+        display: block;
+        width: 250px;
+        min-height: 75px;
+    }
+    .button_1 {
+        display: block;
+        margin-left: 20px;
+        font-size: 8px;
+    }
+    .button_2{
+        display: block;
+        margin-left: 20px;
+        font-size: 8px;
     }
 }
